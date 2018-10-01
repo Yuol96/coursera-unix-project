@@ -1,5 +1,6 @@
 README.md : guessinggame.sh
-	echo "# coursera-unix-project" >> README.md
+	name=$(basename `pwd`)
+	echo "# $$(basename "$$PWD")" >> README.md
 	echo "" >> README.md
 	echo "Date and time: "`LANG=en_us_88591; date` >> README.md
 	echo "" >> README.md
